@@ -1,4 +1,27 @@
 # Builder-Design-Pattern
+Great question! The **Factory Pattern** and **Builder Pattern** are both **creational design patterns** — they deal with **object creation** — but they serve different purposes and are used in different situations.
+
+---
+
+## 🔄 Quick Difference Table
+
+| Feature               | **Factory Pattern** 🏭                                                                  | **Builder Pattern** 🧱                                                       |
+| --------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Purpose**           | Create **one of many types** of objects                                                 | Create **one complex object step-by-step**                                   |
+| **When to use**       | When you want to **delegate object creation** to subclasses or hide instantiation logic | When you want to **construct an object with many options** or configurations |
+| **Returns**           | Often returns objects of **different subtypes** (inheritance)                           | Returns a **single object**, but with **customized attributes**              |
+| **Example**           | Creating `Car`, `Bike`, `Truck` from a `VehicleFactory`                                 | Building a `Burger` with or without cheese, lettuce, sauce                   |
+| **Object complexity** | Usually **simple objects** of varying types                                             | Usually **one complex object**                                               |
+| **Focus**             | Focus on **which class to instantiate**                                                 | Focus on **how to build an object piece by piece**                           |
+
+
+
+* Use **Factory Pattern** when: You want to **create different objects based on input**.
+* Use **Builder Pattern** when: You want to **construct one complex object step-by-step** with various optional fields.
+
+---
+
+Would you like code examples of both side-by-side to compare better?
 
 The Builder Design Pattern is a creational design pattern used to construct complex objects step-by-step. It separates the construction of a complex object from its representation, so the same construction process can create different types of objects.
 
